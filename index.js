@@ -2,9 +2,9 @@
 // Pseudocode for Question-1
 
 //create a Async function to send reminder after 5 seconds
-//and  Wait for 5 seconds using a Promise wrapper
-// Simulating 3 users
-// Send reminders to each user
+// and  Wait for 5 seconds using a Promise wrapper
+// simulating 3 users with a different email
+// send reminders to each user
 
 async function sendReminder(email) {
     await new Promise(resolve => setTimeout(resolve, 5000));
@@ -120,16 +120,12 @@ loadPage();
 
 // Pseudocode for Question-5
 
-// define the fetchPrice function
-// return a new Promise
+// define the fetchPrice function return a new promise
 // use setTimeout to simulate a 2-second delay
 // resolve the promise with the desired message
-
 // create an async function to call fetchPrice using await
-// wait for AAPL price to be fetched
-// logs Price for AAPL retrieved
-// wait for GOOG price to be fetched
-// logs Price for GOOG retrieved
+// wait for AAPL price to be fetched logs price for AAPL retrieved
+// wait for GOOG price to be fetched logs price for GOOG retrieved
 // call the async function
 
 function fetchPrice(symbol) {
